@@ -21,15 +21,6 @@ public class Main{
         ArrayList<RegistroMaestro> maestros = new ArrayList<>();
         ArrayList<RegistroAuxiliar> auxiliares = new ArrayList<>();
         ArrayList<Tematica> tematicas = new ArrayList<>();
-    
-        String url = "jdbc:sqlite:ninos.db";  // Asegúrate de que la ruta es correcta
-       try (Connection conn = DriverManager.getConnection(url)) {
-            if (conn != null) {
-                System.out.println("Conexión exitosa a SQLite!");
-            }
-        } catch (SQLException e) {
-            System.out.println("Error de conexión: " + e.getMessage());
-        }
        
        new Principal().setVisible(true);
             
